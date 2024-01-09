@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../App.js";
 import { Button } from "@ariakit/react";
 import ToDoList from "../ToDoList/ToDoList.js";
+import Form from "../Form/Form.js";
 
 const Tab = () => {
   const defaultSelectedId = "default-selected-tab";
@@ -31,7 +32,7 @@ const Tab = () => {
               <ToDoList />
             </Ariakit.TabPanel>
             <Ariakit.TabPanel>
-              <ul></ul>
+              <Form />
             </Ariakit.TabPanel>
           </div>
         </Ariakit.TabProvider>
