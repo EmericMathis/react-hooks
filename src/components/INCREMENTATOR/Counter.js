@@ -18,12 +18,31 @@ const Counter = () => {
       <h2>Gunther: {state.count}</h2>
       <h3>Tralala = 20</h3>
 
-      <button className="button" onClick={() => dispatch({ type: "INCREMENT" })}>+ 1</button>
-      <button className="button" onClick={() => dispatch({ type: "DECREMENT" })}>- 1</button>
+      <button
+        className="button"
+        onClick={() => dispatch({ type: "INCREMENT" })}
+      >
+        + 1
+      </button>
+      <button
+        className="button"
+        onClick={() => dispatch({ type: "DECREMENT" })}
+      >
+        - 1
+      </button>
       {tralala && (
         <>
           <p>you touch my tralala</p>
           <img src={gunther} className="gif" />
+          {/*<iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/PTvTLvkiAbI?si=3Yhi71dqYR77InVj&amp;controls=0&amp;start=23&amp;autoplay=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+      ></iframe>*/}
         </>
       )}
     </div>
